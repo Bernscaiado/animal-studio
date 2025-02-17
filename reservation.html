@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Café - Reservation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Animal Café</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="reservation.html" class="active">Reservation</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <main>
+    <section class="page-header">
+      <h1>Book Your Session</h1>
+      <p>Choose your preferred animal, date, and time.</p>
+    </section>
+
+    <!-- Reservation Form -->
+    <section class="reservation-form-section">
+      <form action="info-client.html" method="get" class="reservation-form">
+        <!-- Choose Service/Animal -->
+        <label for="service-select">Service / Animal:</label>
+        <select id="service-select" name="service" required>
+          <option value="">--Select--</option>
+          <option value="raccoon">Play with a Raccoon</option>
+          <option value="otter">Feed an Otter</option>
+          <!-- Add more options as needed -->
+        </select>
+
+        <!-- Select Date -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <!-- Select Time -->
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <!-- Number of Participants -->
+        <label for="participants">Number of Participants:</label>
+        <input type="number" id="participants" name="participants" min="1" value="1" required>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-primary">Next</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Animal Café</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

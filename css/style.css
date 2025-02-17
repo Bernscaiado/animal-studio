@@ -1,0 +1,244 @@
+/* style.css */
+
+/* General Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #eee;
+    padding: 1rem;
+  }
+  
+  .logo {
+    margin-right: auto;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    background-color: #ddd;
+    border-radius: 4px;
+  }
+  
+  .btn-cta {
+    background-color: #25a18e;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    margin-left: 1rem;
+    border-radius: 4px;
+  }
+  .btn-cta:hover {
+    background-color: #1f8777;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+  }
+  .hero-content h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  .hero-content p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Buttons */
+  .btn-primary,
+  .btn-secondary {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .btn-primary {
+    background-color: #25a18e;
+  }
+  .btn-primary:hover {
+    background-color: #1f8777;
+  }
+  
+  .btn-secondary {
+    background-color: #555;
+  }
+  .btn-secondary:hover {
+    background-color: #444;
+  }
+  
+  /* Sections */
+  section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Cards / Highlights */
+  .highlighted-services .card-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .card h3 {
+    margin: 0.5rem 0;
+  }
+  .card p {
+    padding: 0 1rem;
+  }
+  .card a {
+    display: inline-block;
+    margin: 0.5rem;
+    color: #25a18e;
+    text-decoration: none;
+  }
+  
+  /* Testimonials */
+  .testimonials .testimonial {
+    background-color: #fff;
+    margin: 1rem auto;
+    max-width: 700px;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  .testimonial blockquote {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Final CTA Section */
+  .final-cta {
+    text-align: center;
+    background-color: #eee;
+    padding: 2rem;
+  }
+  
+  /* Forms */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 1rem auto;
+  }
+  label {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  input, select, textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  fieldset {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  button[type="submit"],
+  button[type="button"] {
+    margin-top: 1rem;
+    background-color: #25a18e;
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  button:hover {
+    background-color: #1f8777;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .footer-links {
+    list-style: none;
+    display: inline-flex;
+    gap: 1rem;
+  }
+  
+  /* Other Pages Specific */
+  .page-header {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Basic placeholders for map */
+  .map-placeholder {
+    background-color: #ccc;
+    width: 100%;
+    height: 300px;
+  }
+  
+  /* Basic media query for responsiveness */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* If you want a mobile menu, you'd implement a toggle here */
+    }
+    .hero {
+      height: auto;
+    }
+    .highlighted-services .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
